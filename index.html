@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maison de Beauté - Luxury Salon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <div class="logo">MAISON DE BEAUTÉ</div>
+            
+            <!-- Desktop Nav -->
+            <nav class="desktop-nav">
+                <a href="#hair" class="nav-link">Hair</a>
+                <a href="#spa" class="nav-link">Spa</a>
+                <a href="#skin" class="nav-link">Skin</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#locations" class="nav-link">Locations</a>
+            </nav>
+            
+            <button class="btn-appointment desktop-only">Book Appointment</button>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav>
+                <a href="#hair">Hair</a>
+                <a href="#spa">Spa</a>
+                <a href="#skin">Skin</a>
+                <a href="#about">About</a>
+                <a href="#locations">Locations</a>
+                <button class="btn-appointment mobile">Book Appointment</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-slide active">
+            <div class="hero-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&h=1080&fit=crop" alt="Hair Couture Redefined">
+        </div>
+        <div class="hero-slide">
+            <div class="hero-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=1920&h=1080&fit=crop" alt="The Art of Premium Care">
+        </div>
+        <div class="hero-slide">
+            <div class="hero-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=1920&h=1080&fit=crop" alt="Where Luxury Meets Expertise">
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="fade-in hero-title">Hair Couture Redefined</h1>
+            <div class="gold-line fade-in delay-1"></div>
+            <p class="hero-subtitle fade-in delay-2">Where Craft Meets Care</p>
+            <button class="btn-hero fade-in delay-3">Begin Experience</button>
+        </div>
+        
+        <!-- Slide Indicators -->
+        <div class="slide-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!-- Signature Services -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="font-serif">Signature Services</h2>
+                <div class="gold-line"></div>
+            </div>
+            
+            <div class="services-grid" id="servicesGrid">
+                <!-- Services will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- The Journey -->
+    <section class="journey-section">
+        <div class="container-md">
+            <div class="section-header">
+                <h2 class="font-serif">The Guest Experience</h2>
+                <div class="gold-line"></div>
+                <p class="journey-subtitle">A curated journey to your best self</p>
+            </div>
+            
+            <!-- Desktop Journey -->
+            <div class="journey-desktop" id="journeyDesktop">
+                <div class="journey-line"></div>
+                <!-- Journey steps will be dynamically inserted here -->
+            </div>
+            
+            <!-- Mobile Journey -->
+            <div class="journey-mobile" id="journeyMobile">
+                <!-- Journey steps will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Excellence -->
+    <section class="trust-section">
+        <div class="container-md">
+            <h2 class="font-serif section-title">Trust & Excellence</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number gold-accent" id="guestsCounter">0</div>
+                    <p class="stat-label">Repeat Guests</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number gold-accent" id="servicesCounter">0</div>
+                    <p class="stat-label">Premium Services</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number gold-accent" id="ratingCounter">0.0</div>
+                    <p class="stat-label">Google Rating</p>
+                </div>
+            </div>
+            
+            <!-- Testimonials -->
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <!-- Testimonials will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="font-serif">Follow Our Journey</h2>
+                <p class="instagram-handle">@MAISONDEBEAUTE</p>
+            </div>
+            
+            <div class="instagram-grid" id="instagramGrid">
+                <!-- Instagram posts will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="font-serif">Maison de Beauté</h3>
+                    <p>Where luxury meets expertise. Experience the art of premium beauty care.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="gold-accent">Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Book Appointment</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="gold-accent">Services</h4>
+                    <ul>
+                        <li><a href="#">Hair Services</a></li>
+                        <li><a href="#">Spa Treatments</a></li>
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Nail Art</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="gold-accent">Stay Connected</h4>
+                    <p class="newsletter-text">Subscribe to our newsletter</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button>Join</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Maison de Beauté. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
